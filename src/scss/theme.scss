@@ -7,9 +7,13 @@
 //  If you specify typography styles for the components you use elsewhere, you should delete this line.
 //  If you don't need the default component typographies but still want the hierarchy styles,
 //  you can delete this line and instead use:
-//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
-@include mat.all-legacy-component-typographies();
-@include mat.legacy-core();
+//    `@include mat.legacy-typography-hierarchy(mat.define-typography-config());`
+/* TODO(mdc-migration): Remove all-legacy-component-typographies once all legacy components are migrated*/
+@include mat.all-component-typographies();
+@include mat.all-component-typographies();
+/* TODO(mdc-migration): Remove legacy-core once all legacy components are migrated*/
+@include mat.core();
+@include mat.core();
 
 $my-primary: mat.define-palette(mat.$blue-palette);
 $my-primary-dark: mat.define-palette(mat.$blue-palette, 400);
@@ -32,8 +36,13 @@ $my-dark-theme: mat.define-dark-theme((
   )
 ));
 
-@include mat.all-legacy-component-themes($my-theme);
+/* TODO(mdc-migration): Remove all-legacy-component-themes once all legacy components are migrated*/
+@include mat.all-component-themes($my-theme);
+
+@include mat.all-component-themes($my-theme);
 
 .darkMode {
-  @include mat.all-legacy-component-themes($my-dark-theme);
+  /* TODO(mdc-migration): Remove all-legacy-component-themes once all legacy components are migrated*/
+  @include mat.all-component-themes($my-dark-theme);
+  @include mat.all-component-themes($my-dark-theme);
 }

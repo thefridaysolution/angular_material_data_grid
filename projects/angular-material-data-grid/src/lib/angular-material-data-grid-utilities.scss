@@ -163,6 +163,7 @@
   padding: 0 10px !important;
 }
 
+/*TODO(mdc-migration): The following rule targets internal classes of select that may no longer apply for the MDC version.*/
 .mat-select-value {
   text-align: left;
 }
@@ -193,6 +194,7 @@
 }
 
 .amdg-link {
+  /*TODO(mdc-migration): The following rule targets internal classes of button that may no longer apply for the MDC version.*/
   .mat-button-wrapper {
     &:hover {
       text-decoration: underline;
@@ -208,7 +210,7 @@ body {
       background: #424242;
       color: white;
     }
-    .cdk-drag-preview, .mat-menu-panel {
+    .cdk-drag-preview, .mat-mdc-menu-panel {
       color: white;
       background: #424242;
     }
@@ -223,7 +225,7 @@ body {
     }
   }
 }
-.amdg-image-menu-padding .mat-menu-content {
+.amdg-image-menu-padding .mat-mdc-menu-content {
   padding: 8px !important;
   height: 150px !important;
   box-sizing: content-box !important;

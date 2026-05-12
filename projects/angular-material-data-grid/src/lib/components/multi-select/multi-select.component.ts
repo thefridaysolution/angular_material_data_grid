@@ -10,7 +10,7 @@ import {
   ViewChild
 } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { MatLegacySelect as MatSelect } from "@angular/material/legacy-select";
+import { MatSelect } from "@angular/material/select";
 import { GridService } from '../../grids/grid.service';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 

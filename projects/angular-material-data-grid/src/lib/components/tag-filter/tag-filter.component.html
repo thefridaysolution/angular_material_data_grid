@@ -26,11 +26,11 @@
     </div>
     <p class="amdg-text-center amdg-mt-2 amdg-text-muted" *ngIf="tagValues.length === 0">No Tags entered</p>
     <div class="amdg-tags-container amdg-p-3" *ngIf="tagValues.length > 0;">
-      <mat-chip-list>
-        <mat-chip *ngFor="let tag of tagValues;let i = index" [removable]="true" (removed)="tagValues.splice(i, 1)" [selectable]="false">
+      <mat-chip-listbox>
+        <mat-chip-option *ngFor="let tag of tagValues;let i = index" [removable]="true" (removed)="tagValues.splice(i, 1)" [selectable]="false">
           {{tag}} <mat-icon matChipRemove>cancel</mat-icon>
-        </mat-chip>
-      </mat-chip-list>
+        </mat-chip-option>
+      </mat-chip-listbox>
     </div>
 
   </div>

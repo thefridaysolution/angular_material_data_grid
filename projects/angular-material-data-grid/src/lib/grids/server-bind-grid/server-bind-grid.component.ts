@@ -29,7 +29,7 @@ import {
   FixedSizeVirtualScrollStrategy,
   VIRTUAL_SCROLL_STRATEGY
 } from '@angular/cdk/scrolling';
-import {MatLegacyDialog as MatDialog} from '@angular/material/legacy-dialog';
+import {MatDialog} from '@angular/material/dialog';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 import {GridService} from '../grid.service';
 import {GridFilterItem} from '../../angular-material-data-grid-interfaces';

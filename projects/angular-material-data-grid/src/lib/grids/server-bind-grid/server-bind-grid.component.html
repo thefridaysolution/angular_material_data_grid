@@ -1,7 +1,7 @@
 <div id="amdg-grid-container">
   <div class="amdg-layout-container amdg-p-0">
     <div>
-      <mat-card id="column-control-btn-card"><button *ngIf="columnControl" mat-raised-button [matMenuTriggerFor]="columnControlMenu">Column Preferences<mat-icon>expand_more</mat-icon></button></mat-card>
+      <mat-card appearance="outlined" id="column-control-btn-card"><button *ngIf="columnControl" mat-raised-button [matMenuTriggerFor]="columnControlMenu">Column Preferences<mat-icon>expand_more</mat-icon></button></mat-card>
       <mat-menu #columnControlMenu="matMenu" class="amdg-column-control-menu" (closed)="updateColumns(true)">
         <div class="amdg-column-control-container" (click)="$event.stopPropagation()">
           <div class="amdg-layout-container amdg-p-3" style="align-items: start">
@@ -37,7 +37,7 @@
       <ng-content></ng-content>
     </div>
   </div>
-  <mat-card id="grid" class="mat-elevation-z{{elevation}}" [ngClass]="{'fullscreen': fullscreen, 'grid-transparency': transparency}" [style.border-top-left-radius]="columnControl ? '0px' : '5px'">
+  <mat-card appearance="outlined" id="grid" class="mat-elevation-z{{elevation}}" [ngClass]="{'fullscreen': fullscreen, 'grid-transparency': transparency}" [style.border-top-left-radius]="columnControl ? '0px' : '5px'">
     <button *ngIf="scrollRemainingDistanceToLeft !== 0" mat-button (click)="scrollLeft()" aria-label="navigate left" class="navigate-left-btn">
       <mat-icon class="amdg-fs-40 navigate-icons">chevron_left</mat-icon>
     </button>

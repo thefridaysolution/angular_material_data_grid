@@ -1,6 +1,6 @@
 @import '../../variables';
 
-.mat-menu-panel.amdg-column-control-menu {
+.mat-mdc-menu-panel.amdg-column-control-menu {
   width: 320px;
   max-width: 320px;
 }
@@ -352,6 +352,7 @@
 
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of checkbox that may no longer apply for the MDC version.*/
 mat-checkbox {
  label {
    margin: 0 !important;
