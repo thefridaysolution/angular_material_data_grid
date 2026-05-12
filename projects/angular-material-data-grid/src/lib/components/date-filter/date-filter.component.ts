@@ -15,9 +15,10 @@ import { MatDatepicker } from '@angular/material/datepicker';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 
 @Component({
-  selector: 'amdg-date-filter',
-  templateUrl: './date-filter.component.html',
-  styleUrls: ['./date-filter.component.scss']
+    selector: 'amdg-date-filter',
+    templateUrl: './date-filter.component.html',
+    styleUrls: ['./date-filter.component.scss'],
+    standalone: false
 })
 export class DateFilterComponent implements OnInit, OnChanges {
 

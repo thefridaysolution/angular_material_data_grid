@@ -4,9 +4,10 @@ import { GridHeading } from '../../../../projects/angular-material-data-grid/src
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
-  selector: 'app-top-right-buttons-example',
-  templateUrl: './top-right-buttons-example.component.html',
-  styleUrls: ['./top-right-buttons-example.component.scss']
+    selector: 'app-top-right-buttons-example',
+    templateUrl: './top-right-buttons-example.component.html',
+    styleUrls: ['./top-right-buttons-example.component.scss'],
+    standalone: false
 })
 export class TopRightButtonsExampleComponent {
 

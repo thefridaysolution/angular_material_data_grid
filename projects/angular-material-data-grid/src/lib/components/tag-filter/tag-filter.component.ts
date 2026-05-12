@@ -14,9 +14,10 @@ import { MatMenuTrigger } from '@angular/material/menu';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 
 @Component({
-  selector: 'amdg-tag-filter',
-  templateUrl: './tag-filter.component.html',
-  styleUrls: ['./tag-filter.component.scss']
+    selector: 'amdg-tag-filter',
+    templateUrl: './tag-filter.component.html',
+    styleUrls: ['./tag-filter.component.scss'],
+    standalone: false
 })
 export class TagFilterComponent implements OnInit, OnChanges {
 

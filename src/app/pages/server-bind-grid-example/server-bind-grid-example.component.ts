@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-server-bind-grid-example',
-  templateUrl: './server-bind-grid-example.component.html',
-  styleUrls: ['./server-bind-grid-example.component.scss']
+    selector: 'app-server-bind-grid-example',
+    templateUrl: './server-bind-grid-example.component.html',
+    styleUrls: ['./server-bind-grid-example.component.scss'],
+    standalone: false
 })
 
 export class ServerBindGridExampleComponent {

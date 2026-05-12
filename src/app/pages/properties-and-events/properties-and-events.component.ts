@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-properties-and-events',
-  templateUrl: './properties-and-events.component.html',
-  styleUrls: ['./properties-and-events.component.scss']
+    selector: 'app-properties-and-events',
+    templateUrl: './properties-and-events.component.html',
+    styleUrls: ['./properties-and-events.component.scss'],
+    standalone: false
 })
 export class PropertiesAndEventsComponent implements OnInit {
 

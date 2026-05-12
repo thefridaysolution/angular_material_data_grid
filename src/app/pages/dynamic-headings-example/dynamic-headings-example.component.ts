@@ -3,9 +3,10 @@ import { environment } from '../../../environments/environment';
 import { GridFilterItem, GridHeading } from '../../../../projects/angular-material-data-grid/src/lib/angular-material-data-grid-interfaces';
 
 @Component({
-  selector: 'app-dynamic-headings-example',
-  templateUrl: './dynamic-headings-example.component.html',
-  styleUrls: ['./dynamic-headings-example.component.scss']
+    selector: 'app-dynamic-headings-example',
+    templateUrl: './dynamic-headings-example.component.html',
+    styleUrls: ['./dynamic-headings-example.component.scss'],
+    standalone: false
 })
 export class DynamicHeadingsExampleComponent {
 

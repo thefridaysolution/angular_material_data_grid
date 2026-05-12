@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-image-type',
-  templateUrl: './image-type.component.html',
-  styleUrls: ['./image-type.component.scss']
+    selector: 'app-image-type',
+    templateUrl: './image-type.component.html',
+    styleUrls: ['./image-type.component.scss'],
+    standalone: false
 })
 export class ImageTypeComponent {
 

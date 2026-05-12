@@ -4,9 +4,10 @@ import { GridHeading } from '../../../../../projects/angular-material-data-grid/
 
 
 @Component({
-  selector: 'app-grid-within-dialog',
-  templateUrl: './grid-within-dialog.component.html',
-  styleUrls: ['./grid-within-dialog.component.scss']
+    selector: 'app-grid-within-dialog',
+    templateUrl: './grid-within-dialog.component.html',
+    styleUrls: ['./grid-within-dialog.component.scss'],
+    standalone: false
 })
 export class GridWithinDialogComponent implements OnInit {
 

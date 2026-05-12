@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-master-detail-example',
-  templateUrl: './master-detail-example.component.html',
-  styleUrls: ['./master-detail-example.component.scss']
+    selector: 'app-master-detail-example',
+    templateUrl: './master-detail-example.component.html',
+    styleUrls: ['./master-detail-example.component.scss'],
+    standalone: false
 })
 export class MasterDetailExampleComponent implements OnInit {
 

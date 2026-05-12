@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'template_object'
+    name: 'template_object',
+    standalone: false
 })
 export class TemplateObjectPipe implements PipeTransform {
 

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-button-group-builder',
-  templateUrl: './button-group-builder.component.html',
-  styleUrls: ['./button-group-builder.component.scss']
+    selector: 'app-button-group-builder',
+    templateUrl: './button-group-builder.component.html',
+    styleUrls: ['./button-group-builder.component.scss'],
+    standalone: false
 })
 export class ButtonGroupBuilderComponent implements OnInit {
 

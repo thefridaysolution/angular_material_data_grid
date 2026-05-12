@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-virtual-scrolling',
-  templateUrl: './virtual-scrolling.component.html',
-  styleUrls: ['./virtual-scrolling.component.scss']
+    selector: 'app-virtual-scrolling',
+    templateUrl: './virtual-scrolling.component.html',
+    styleUrls: ['./virtual-scrolling.component.scss'],
+    standalone: false
 })
 export class VirtualScrollingComponent implements OnInit {
 

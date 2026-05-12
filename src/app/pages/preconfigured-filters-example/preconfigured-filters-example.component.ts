@@ -3,9 +3,10 @@ import { environment } from '../../../environments/environment';
 import { GridFilterItem, GridHeading } from '../../../../projects/angular-material-data-grid/src/lib/angular-material-data-grid-interfaces';
 
 @Component({
-  selector: 'app-preconfigured-filters-example',
-  templateUrl: './preconfigured-filters-example.component.html',
-  styleUrls: ['./preconfigured-filters-example.component.scss']
+    selector: 'app-preconfigured-filters-example',
+    templateUrl: './preconfigured-filters-example.component.html',
+    styleUrls: ['./preconfigured-filters-example.component.scss'],
+    standalone: false
 })
 export class PreconfiguredFiltersExampleComponent {
 

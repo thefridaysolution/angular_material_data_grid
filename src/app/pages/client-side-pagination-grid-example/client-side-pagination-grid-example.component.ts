@@ -10,9 +10,10 @@ import {
 } from '../../../../projects/angular-material-data-grid/src/lib/angular-material-data-grid-interfaces';
 
 @Component({
-  selector: 'app-client-side-pagination-grid-example',
-  templateUrl: './client-side-pagination-grid-example.component.html',
-  styleUrls: ['./client-side-pagination-grid-example.component.scss']
+    selector: 'app-client-side-pagination-grid-example',
+    templateUrl: './client-side-pagination-grid-example.component.html',
+    styleUrls: ['./client-side-pagination-grid-example.component.scss'],
+    standalone: false
 })
 export class ClientSidePaginationGridExampleComponent implements OnInit {
 

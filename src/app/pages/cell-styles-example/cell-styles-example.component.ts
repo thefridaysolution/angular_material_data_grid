@@ -3,9 +3,10 @@ import { environment } from '../../../environments/environment';
 import { GridHeading, GridResponse } from '../../../../projects/angular-material-data-grid/src/lib/angular-material-data-grid-interfaces';
 
 @Component({
-  selector: 'app-cell-styles-example',
-  templateUrl: './cell-styles-example.component.html',
-  styleUrls: ['./cell-styles-example.component.scss']
+    selector: 'app-cell-styles-example',
+    templateUrl: './cell-styles-example.component.html',
+    styleUrls: ['./cell-styles-example.component.scss'],
+    standalone: false
 })
 export class CellStylesExampleComponent {
 

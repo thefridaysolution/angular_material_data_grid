@@ -5,9 +5,10 @@ import { GridWithinDialogComponent } from './grid-within-dialog/grid-within-dial
 import { environment } from '../../../environments/environment';
 
 @Component({
-  selector: 'app-open-dialog',
-  templateUrl: './open-dialog.component.html',
-  styleUrls: ['./open-dialog.component.scss']
+    selector: 'app-open-dialog',
+    templateUrl: './open-dialog.component.html',
+    styleUrls: ['./open-dialog.component.scss'],
+    standalone: false
 })
 export class OpenDialogComponent {
 

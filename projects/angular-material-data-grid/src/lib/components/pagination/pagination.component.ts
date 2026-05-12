@@ -3,9 +3,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationComponent } from '../confirmation/confirmation.component';
 
 @Component({
-  selector: 'amdg-pagination',
-  templateUrl: './pagination.component.html',
-  styleUrls: ['./pagination.component.scss']
+    selector: 'amdg-pagination',
+    templateUrl: './pagination.component.html',
+    styleUrls: ['./pagination.component.scss'],
+    standalone: false
 })
 export class PaginationComponent implements OnInit, OnChanges {
 

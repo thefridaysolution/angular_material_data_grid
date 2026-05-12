@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-numeric-filter',
-  templateUrl: './numeric-filter.component.html',
-  styleUrls: ['./numeric-filter.component.scss']
+    selector: 'app-numeric-filter',
+    templateUrl: './numeric-filter.component.html',
+    styleUrls: ['./numeric-filter.component.scss'],
+    standalone: false
 })
 export class NumericFilterComponent implements OnInit {
 

@@ -17,10 +17,11 @@ import {GridService} from '../grid.service';
 import GridSortItemInterface from '../../interfaces/grid-sort-item';
 
 @Component({
-  selector: 'amdg-child-grid',
-  templateUrl: './child-grid.component.html',
-  styleUrls: ['./child-grid.component.scss', '../server-bind-grid/server-bind-grid.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'amdg-child-grid',
+    templateUrl: './child-grid.component.html',
+    styleUrls: ['./child-grid.component.scss', '../server-bind-grid/server-bind-grid.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ChildGridComponent implements OnInit {
 

@@ -7,9 +7,10 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-container',
-  templateUrl: './container.component.html',
-  styleUrls: ['./container.component.scss']
+    selector: 'app-container',
+    templateUrl: './container.component.html',
+    styleUrls: ['./container.component.scss'],
+    standalone: false
 })
 export class ContainerComponent implements AfterViewInit , OnDestroy {
   darkMode = false;

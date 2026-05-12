@@ -3,9 +3,10 @@ import { environment } from '../../../environments/environment';
 import { GridHeading } from '../../../../projects/angular-material-data-grid/src/lib/angular-material-data-grid-interfaces';
 
 @Component({
-  selector: 'app-transparency-example',
-  templateUrl: './transparency-example.component.html',
-  styleUrls: ['./transparency-example.component.scss']
+    selector: 'app-transparency-example',
+    templateUrl: './transparency-example.component.html',
+    styleUrls: ['./transparency-example.component.scss'],
+    standalone: false
 })
 export class TransparencyExampleComponent {
 

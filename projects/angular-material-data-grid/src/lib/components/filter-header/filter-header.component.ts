@@ -2,9 +2,10 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 
 @Component({
-  selector: 'amdg-filter-header',
-  templateUrl: './filter-header.component.html',
-  styleUrls: ['./filter-header.component.scss']
+    selector: 'amdg-filter-header',
+    templateUrl: './filter-header.component.html',
+    styleUrls: ['./filter-header.component.scss'],
+    standalone: false
 })
 export class FilterHeaderComponent implements OnInit {
 

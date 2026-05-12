@@ -2,9 +2,10 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'amdg-confirmation',
-  templateUrl: './confirmation.component.html',
-  styleUrls: ['./confirmation.component.scss']
+    selector: 'amdg-confirmation',
+    templateUrl: './confirmation.component.html',
+    styleUrls: ['./confirmation.component.scss'],
+    standalone: false
 })
 export class ConfirmationComponent implements OnInit {
 

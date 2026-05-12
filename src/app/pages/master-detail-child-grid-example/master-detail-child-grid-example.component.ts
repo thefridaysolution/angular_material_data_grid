@@ -3,9 +3,10 @@ import { environment } from '../../../environments/environment';
 import { GridHeading, GridResponse, GridMasterDetailConfig } from '../../../../projects/angular-material-data-grid/src/lib/angular-material-data-grid-interfaces';
 
 @Component({
-  selector: 'app-master-detail-child-grid-example',
-  templateUrl: './master-detail-child-grid-example.component.html',
-  styleUrls: ['./master-detail-child-grid-example.component.scss']
+    selector: 'app-master-detail-child-grid-example',
+    templateUrl: './master-detail-child-grid-example.component.html',
+    styleUrls: ['./master-detail-child-grid-example.component.scss'],
+    standalone: false
 })
 export class MasterDetailChildGridExampleComponent {
 

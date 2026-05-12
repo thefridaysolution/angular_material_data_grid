@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-url-builder',
-  templateUrl: './url-builder.component.html',
-  styleUrls: ['./url-builder.component.scss']
+    selector: 'app-url-builder',
+    templateUrl: './url-builder.component.html',
+    styleUrls: ['./url-builder.component.scss'],
+    standalone: false
 })
 export class UrlBuilderComponent implements OnInit {
 

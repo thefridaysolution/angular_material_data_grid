@@ -14,9 +14,10 @@ import { MatMenuTrigger } from '@angular/material/menu';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 
 @Component({
-  selector: 'amdg-string-filter',
-  templateUrl: './string-filter.component.html',
-  styleUrls: ['./string-filter.component.scss']
+    selector: 'amdg-string-filter',
+    templateUrl: './string-filter.component.html',
+    styleUrls: ['./string-filter.component.scss'],
+    standalone: false
 })
 export class StringFilterComponent implements OnInit, OnChanges {
 

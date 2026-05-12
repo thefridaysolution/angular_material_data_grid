@@ -16,9 +16,10 @@ import { MatMenuTrigger } from '@angular/material/menu';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 
 @Component({
-  selector: 'amdg-number-filter',
-  templateUrl: './number-filter.component.html',
-  styleUrls: ['./number-filter.component.scss']
+    selector: 'amdg-number-filter',
+    templateUrl: './number-filter.component.html',
+    styleUrls: ['./number-filter.component.scss'],
+    standalone: false
 })
 export class NumberFilterComponent implements OnInit, OnChanges, OnDestroy {
 

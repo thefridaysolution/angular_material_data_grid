@@ -15,9 +15,10 @@ import { GridService } from '../../grids/grid.service';
 import GridFilterItemInterface from '../../interfaces/grid-filter-item';
 
 @Component({
-  selector: 'amdg-multi-select',
-  templateUrl: './multi-select.component.html',
-  styleUrls: ['./multi-select.component.scss']
+    selector: 'amdg-multi-select',
+    templateUrl: './multi-select.component.html',
+    styleUrls: ['./multi-select.component.scss'],
+    standalone: false
 })
 export class MultiSelectComponent implements OnInit, OnChanges {
 

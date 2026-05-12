@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-string-filter',
-  templateUrl: './string-filter.component.html',
-  styleUrls: ['./string-filter.component.scss']
+    selector: 'app-string-filter',
+    templateUrl: './string-filter.component.html',
+    styleUrls: ['./string-filter.component.scss'],
+    standalone: false
 })
 export class StringFilterComponent implements OnInit {
   ts = `

@@ -3,9 +3,10 @@ import { GridHeading } from '../../../../projects/angular-material-data-grid/src
 import { environment } from '../../../environments/environment';
 
 @Component({
-  selector: 'app-reinitialize-grid-example',
-  templateUrl: './reinitialize-grid-example.component.html',
-  styleUrls: ['./reinitialize-grid-example.component.scss']
+    selector: 'app-reinitialize-grid-example',
+    templateUrl: './reinitialize-grid-example.component.html',
+    styleUrls: ['./reinitialize-grid-example.component.scss'],
+    standalone: false
 })
 export class ReinitializeGridExampleComponent {
 

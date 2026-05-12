@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-column-control',
-  templateUrl: './column-control.component.html',
-  styleUrls: ['./column-control.component.scss']
+    selector: 'app-column-control',
+    templateUrl: './column-control.component.html',
+    styleUrls: ['./column-control.component.scss'],
+    standalone: false
 })
 export class ColumnControlComponent implements OnInit {
 
