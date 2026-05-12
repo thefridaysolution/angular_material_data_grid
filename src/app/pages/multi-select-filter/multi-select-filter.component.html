@@ -7,7 +7,7 @@
     This can be configured to have a single selection or multiple selection of filter values.</p>
 
   <div class="d-inline-flex" style="align-items: center">
-    <p class="mr-3 pt-3">interface:</p>  <code highlight="OtherConfigType" class="d-inline-block"></code>
+    <p class="mr-3 pt-3">interface:</p>  <code highlight="OtherConfigType" language="typescript" class="d-inline-block"></code>
   </div>
   <mat-card appearance="outlined" class="simple-table-container">
     <div>
@@ -17,29 +17,29 @@
           <th>Description</th>
         </tr>
         <tr class="odd">
-          <td><code highlight="selectionMode: 'single' | 'multiple'"></code></td>
+          <td><code highlight="selectionMode: 'single' | 'multiple'" language="typescript"></code></td>
           <td>Multi-select can be configured to have a single selection or multiple selection of filter values.</td>
         </tr>
         <tr>
-          <td><code highlight="source: 'internal' | 'external'"></code></td>
+          <td><code highlight="source: 'internal' | 'external'" language="typescript"></code></td>
           <td>Multi-select source can either be internal or external. If the source is internal;
             url, key and value fields are not needed. However, optionsObject is essential when the source is internal.
             IMPORTANT - source can also be used for url builder - if external is given external links can be opened.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="optionsObject: MultiSelectOptionsType[]"></code></td>
+          <td><code highlight="optionsObject: MultiSelectOptionsType[]" language="typescript"></code></td>
           <td>This contains the filter values and their display names which is essential when source is internal.</td>
         </tr>
         <tr>
-          <td><code highlight="url: string"></code></td>
+          <td><code highlight="url: string" language="typescript"></code></td>
           <td>The url of a GET request needed if the source is external which should return an array of objects.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="key: string"></code></td>
+          <td><code highlight="key: string" language="typescript"></code></td>
           <td>The key is needed if the source is external, this refers to the display name of the filter value.</td>
         </tr>
         <tr>
-          <td><code highlight="value: string"></code></td>
+          <td><code highlight="value: string" language="typescript"></code></td>
           <td>The value is needed if the source is external, this refers to the actual filter value.</td>
         </tr>
       </table>
@@ -48,9 +48,9 @@
   <br><br>
 
   <p>Example of an internal and external source multi-select filter configuration.</p>
-  <pre><code [highlight]="ts"></code></pre>
+  <pre><code [highlight]="ts" language="typescript"></code></pre>
   <br> <br>
   <p>This is a sample filter object sent through the multi-select filter within the <a routerLink="/gettingStarted/introduction">filters array</a> in the grid request.
     Notice that when multiple values are sent through this filter, it goes as a comma separated string.</p>
-  <code highlight="{ field: 'country', operator: 'eq', value: 'Australia,Sri Lanka' }" class="d-inline-block"></code>
+  <code highlight="{ field: 'country', operator: 'eq', value: 'Australia,Sri Lanka' }" language="typescript" class="d-inline-block"></code>
 </div>

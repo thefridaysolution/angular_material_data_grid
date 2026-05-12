@@ -120,7 +120,7 @@ export class ServerBindGridComponent implements OnInit, AfterViewInit, OnChanges
   @ViewChild('cdkVirtualScrollViewport') cdkVirtualScrollViewport!: CdkVirtualScrollViewport;
 
   // Window resize listener
-  @HostListener('window:resize', ['$event'])
+  @HostListener('window:resize')
   onResize(): void {
     this.calculateGridWidth();
   }

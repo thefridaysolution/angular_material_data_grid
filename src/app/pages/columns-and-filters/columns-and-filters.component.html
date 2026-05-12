@@ -5,7 +5,7 @@
     for that column and also a data <b>type</b> which can be either
     'string' | 'number' | 'currency' | 'date' | 'button-group' | 'image-url</p>
   <p>A very basic column configuration looks like the object below</p>
-  <code highlight="{ fieldName: 'email', display: 'Email', type: 'string' }"></code>
+  <code highlight="{ fieldName: 'email', display: 'Email', type: 'string' }" language="typescript"></code>
 
 
     <p class="mr-3 pt-3">A set of objects which inherits the GridHeading interface should be passed to
@@ -14,7 +14,7 @@
       described below.<br>
     </p>
   <div class="d-inline-flex" style="align-items: center">
-    <p class="mr-3 pt-3">interface:</p>  <code highlight="GridHeading" class="d-inline-block"></code>
+    <p class="mr-3 pt-3">interface:</p>  <code highlight="GridHeading" language="typescript" class="d-inline-block"></code>
   </div>
   <mat-card appearance="outlined" class="simple-table-container">
     <div>
@@ -24,76 +24,76 @@
           <th>Description</th>
         </tr>
         <tr class="odd">
-          <td><code highlight="fieldName: string"></code></td>
+          <td><code highlight="fieldName: string" language="typescript"></code></td>
           <td>This refers to field name mapping which gets returned from the server. The column value
             will be bound with this mapping.</td>
         </tr>
         <tr>
-          <td><code highlight="display: string"></code></td>
+          <td><code highlight="display: string" language="typescript"></code></td>
           <td>This refers to the column header name which is displayed to the user.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="type: 'string' | 'number' | 'currency' | 'date' | 'button-group' | 'image-url'"></code></td>
+          <td><code highlight="type: 'string' | 'number' | 'currency' | 'date' | 'button-group' | 'image-url'" language="typescript"></code></td>
           <td>A column consists of multiple data types. Based on the value given here the column
             filtration and the way the data is displayed may vary.</td>
         </tr>
         <tr class="">
-          <td><code highlight="width: string"></code></td>
+          <td><code highlight="width: string" language="typescript"></code></td>
           <td>This refers to the column's width which can be given as a px value or a percentage.
             Eg: '150px' or '25%'
           </td>
         </tr>
         <tr class="odd">
-          <td><code highlight="clickable: 'url' | 'button'"></code></td>
+          <td><code highlight="clickable: 'url' | 'button'" language="typescript"></code></td>
           <td>This optional attribute makes a grid value clickable. It can either be a <b>url</b> which will create a link (needs additional configurations - check
             <a routerLink="/columnsAndFilters/urlBuilder">URL builder</a>) or <b>button</b> which will
-              trigger a click event. <code highlight="@Output() buttonClickEmit: EventEmitter<GridButtonClick>"></code>
+              trigger a click event. <code highlight="@Output() buttonClickEmit: EventEmitter<GridButtonClick>" language="typescript"></code>
               It is applicable to data types of 'string' | 'number' | 'currency' | 'date'
           </td>
         </tr>
         <tr class="">
-          <td><code highlight="disableFiltering: boolean"></code></td>
+          <td><code highlight="disableFiltering: boolean" language="typescript"></code></td>
           <td>This boolean value determines if the filter is shown or hidden.
             By default filtering is enabled which means it goes as false.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="disableSorting: boolean"></code></td>
+          <td><code highlight="disableSorting: boolean" language="typescript"></code></td>
           <td>This boolean value determines if sorting is enabled/disabled. By default sorting is
             enabled which means it goes as false.</td>
         </tr>
         <tr class="">
-          <td><code highlight="textAlign: 'left' | 'right' | 'center'"></code></td>
+          <td><code highlight="textAlign: 'left' | 'right' | 'center'" language="typescript"></code></td>
           <td>This value in the grid can be aligned to left, right or center.
             By default, it is left-aligned.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="background: string"></code></td>
+          <td><code highlight="background: string" language="typescript"></code></td>
           <td>This value can be used to change the background color of a column.</td>
         </tr>
         <tr>
-          <td><code highlight="color: string"></code></td>
+          <td><code highlight="color: string" language="typescript"></code></td>
           <td>This value can be used to change the font color of a column.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="fontWeight: '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900' | 'bold' | 'normal'"></code></td>
+          <td><code highlight="fontWeight: '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900' | 'bold' | 'normal'" language="typescript"></code></td>
           <td>This value can be used to change the fontWeight of a column.</td>
         </tr>
         <tr>
-          <td><code highlight="fontStyle: 'italic' | 'normal'"></code></td>
+          <td><code highlight="fontStyle: 'italic' | 'normal'" language="typescript"></code></td>
           <td>This value can be used to change the fontStyle of a column.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="prefix: string"></code></td>
+          <td><code highlight="prefix: string" language="typescript"></code></td>
           <td>Add a custom prefix to the displayed data. For example # in front of a number - #1.
               This can also be used to change the currency symbol from the default $ sign to another
               in the currency data type.</td>
         </tr>
         <tr>
-          <td><code highlight="suffix: string"></code></td>
+          <td><code highlight="suffix: string" language="typescript"></code></td>
           <td>Add a custom suffix to the displayed data. For example % at the end of a number - 20%.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="filterType: 'multi-select' | 'tag'"></code></td>
+          <td><code highlight="filterType: 'multi-select' | 'tag'" language="typescript"></code></td>
           <td>This is a feature to enable an optional filter type that can be given for string or number type.
             A multi-select filter (available for only string type) type is an advanced filter which can either have one or more filter
             values given to a single column. A tag filter (available for both string and number types) is a similar filter but is used if there are a
@@ -101,7 +101,7 @@
             Eg: Social Security Numbers</td>
         </tr>
         <tr>
-          <td><code highlight="show: boolean"></code></td>
+          <td><code highlight="show: boolean" language="typescript"></code></td>
           <td>This identifies if a column is shown to the user or not. If this value is not given,
             the column is treated as a required column which is always shown and cannot be hidden by
             the user through <b>Column Preferences</b> (Only if column <a routerLink="/gettingStarted/propertiesAndEvents">&#64;Input() columnControl</a> is passed as true). If true is given the column will be shown and the user
@@ -109,17 +109,17 @@
             through Column Preferences.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="headerTooltip?: string"></code></td>
+          <td><code highlight="headerTooltip?: string" language="typescript"></code></td>
           <td>This can be used to pass a small explanation for the column header which will be shown when the
             user hovers over.</td>
         </tr>
         <tr>
-          <td><code highlight="other?: OtherConfigType"></code></td>
+          <td><code highlight="other?: OtherConfigType" language="typescript"></code></td>
           <td>This refers to additional configurations that can be given to a column to control the
             behaviour of urls, multi-selects and action buttons in the grid.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="sort: string"></code></td>
+          <td><code highlight="sort: string" language="typescript"></code></td>
           <td>This field is autofilled by the grid system, do not set values manually.</td>
         </tr>
       </table>

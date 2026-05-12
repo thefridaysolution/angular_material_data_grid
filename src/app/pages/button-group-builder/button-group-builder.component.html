@@ -9,7 +9,7 @@
     <a routerLink="/gettingStarted/propertiesAndEvents">Properties & Events</a> section's &#64;Output buttonClickEmit.</p>
 
   <div class="d-inline-flex" style="align-items: center">
-    <p class="mr-3 pt-3">interface:</p>  <code highlight="OtherConfigType" class="d-inline-block"></code>
+    <p class="mr-3 pt-3">interface:</p>  <code highlight="OtherConfigType" language="typescript" class="d-inline-block"></code>
   </div>
   <mat-card appearance="outlined" class="simple-table-container">
     <div>
@@ -19,13 +19,13 @@
           <th>Description</th>
         </tr>
         <tr class="odd">
-          <td><code highlight="mainButton: ButtonConfigType"></code></td>
+          <td><code highlight="mainButton: ButtonConfigType" language="typescript"></code></td>
           <td>If buttons array (see below) has more than one object (button) mainButton configuration is essential,
             This refers to the menu button which will contain the buttons if there are more than one button.
             It uses MatMenu for this purpose.</td>
         </tr>
         <tr>
-          <td><code highlight="buttons: ButtonConfigType[]"></code></td>
+          <td><code highlight="buttons: ButtonConfigType[]" language="typescript"></code></td>
           <td>This array contains the button elements. If one button is there it will be displayed in the column,
             if multiple are there it will be inside the mat menu.</td>
         </tr>
@@ -35,7 +35,7 @@
   <br><br>
 
   <div class="d-inline-flex" style="align-items: center">
-    <p class="mr-3 pt-3">interface:</p>  <code highlight="ButtonConfigType" class="d-inline-block"></code>
+    <p class="mr-3 pt-3">interface:</p>  <code highlight="ButtonConfigType" language="typescript" class="d-inline-block"></code>
   </div>
   <mat-card appearance="outlined" class="simple-table-container">
     <div>
@@ -45,15 +45,15 @@
           <th>Description</th>
         </tr>
         <tr class="odd">
-          <td><code highlight="display: string"></code></td>
+          <td><code highlight="display: string" language="typescript"></code></td>
           <td>Button Text.</td>
         </tr>
         <tr>
-          <td><code highlight="icon: string"></code></td>
+          <td><code highlight="icon: string" language="typescript"></code></td>
           <td>Button icon from the material icons list. <a class="d-inline-block w-100 text-truncate" href="https://material.io/resources/icons">https://material.io/resources/icons</a></td>
         </tr>
         <tr class="odd">
-          <td><code highlight="disableField: string"></code></td>
+          <td><code highlight="disableField: string" language="typescript"></code></td>
           <td>If there is a reason to disable a given button based on a certain calculation or a certain logic, a row's
             field can be given which will contain a boolean value. If it is true this button will get disabled.
             Eg: a user object may have a field called 'archived' which if true this button can be disabled.</td>
@@ -64,5 +64,5 @@
   <br><br>
 
   <p>Example of an internal and external source url type configuration.</p>
-  <pre><code [highlight]="ts"></code></pre>
+  <pre><code [highlight]="ts" language="typescript"></code></pre>
 </div>

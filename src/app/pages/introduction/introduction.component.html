@@ -14,13 +14,13 @@
     object shown below.<br> (Go to the demo page and analyze the network tab to understand this better.)<br></p>
   <p>* <b>entity</b> is an optional attribute which the developer can configure to send additional information to the backend.</p>
   <p>* All other request parameters are automatically handled by the grid system.</p>
-  <pre><code [highlight]="gridRequestObj"></code></pre>
+  <pre><code [highlight]="gridRequestObj" language="typescript"></code></pre>
 
   <h2>Grid Response</h2>
   <p>The grid response should contain a boolean value to determine if the request is a success or failure and more
     importantly the payload section should contain the requested amount of rows and also the total number of rows
     which is present in the database. Note that the total number of rows is not needed for client side paginated grids
     but it is essential for server side pagination.</p>
-  <pre><code [highlight]="gridResponseObj"></code></pre>
+  <pre><code [highlight]="gridResponseObj" language="typescript"></code></pre>
 </div>
 

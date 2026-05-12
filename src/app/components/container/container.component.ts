@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, OnDestroy, Renderer2, ViewChild } from '@angular/core';
 import { navigation } from './navigation';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router, Event } from '@angular/router';
 import { Platform } from '@angular/cdk/platform';
 import { MatDrawer } from '@angular/material/sidenav';
 import { MediaMatcher } from '@angular/cdk/layout';
@@ -38,7 +38,7 @@ export class ContainerComponent implements AfterViewInit , OnDestroy {
       this.renderer.addClass(document.body, 'darkMode');
     }
 
-    this.routerEvents = this.router.events.subscribe(event => {
+    this.routerEvents = this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
         const urlWithoutQueryParams = event.url.split('?')[0];
         const [levelOne, levelTwo] = urlWithoutQueryParams.split('/').filter(item => item);

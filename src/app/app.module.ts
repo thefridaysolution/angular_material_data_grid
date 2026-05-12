@@ -25,7 +25,7 @@ import { DemoComponent } from './pages/demo/demo.component';
 import { IntroductionComponent } from './pages/introduction/introduction.component';
 import { InstallationComponent } from './pages/installation/installation.component';
 import { PropertiesAndEventsComponent } from './pages/properties-and-events/properties-and-events.component';
-import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
+import { HIGHLIGHT_OPTIONS, HighlightModule, Highlight } from 'ngx-highlightjs';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ColumnsAndFiltersComponent } from './pages/columns-and-filters/columns-and-filters.component';
 import { StringFilterComponent } from './pages/string-filter/string-filter.component';
@@ -116,6 +116,7 @@ import { ImageTypeComponent } from './pages/image-type/image-type.component';
         MatMenuModule,
         MatTabsModule,
         HighlightModule,
+        Highlight,
         MatTooltipModule,
         MatSnackBarModule
     ],

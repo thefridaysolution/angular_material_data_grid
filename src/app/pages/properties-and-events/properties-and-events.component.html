@@ -2,9 +2,9 @@
   <h1>Properties & Events</h1>
 
   <p>This document contains the API reference for the Grid Component.</p>
-  <pre><code [highlight]="importLine"></code></pre>
+  <pre><code [highlight]="importLine" language="typescript"></code></pre>
   <div class="d-inline-flex" style="align-items: center">
-    <p class="mr-3 pt-3">Selector:</p>  <code highlight="amdg-grid" class="d-inline-block ml-3"></code>
+    <p class="mr-3 pt-3">Selector:</p>  <code highlight="amdg-grid" language="typescript" class="d-inline-block ml-3"></code>
   </div>
 
   <mat-card appearance="outlined" class="simple-table-container">
@@ -15,118 +15,118 @@
           <th>Description</th>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Input() headings: GridHeading[]"></code></td>
+          <td><code highlight="@Input() headings: GridHeading[]" language="typescript"></code></td>
           <td>This is a required input that should be provided in order to create a grid component.
             Each array item represents a column's configuration. Everytime a new array is assigned to this input a new
             grid request will be sent.</td>
         </tr>
         <tr>
-          <td><code highlight="@Input() url: string"></code></td>
+          <td><code highlight="@Input() url: string" language="typescript"></code></td>
           <td>This is a required input which should contain a POST endpoint which accepts a grid request and
             return a grid response as specified in the <a routerLink="/gettingStarted/introduction">introduction page</a>.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Input() selection: boolean"></code></td>
+          <td><code highlight="@Input() selection: boolean" language="typescript"></code></td>
           <td>This is an optional input which will make the grid items selectable. By default it's false
             which means selection is disabled to end users.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Input() columnControl: boolean"></code></td>
+          <td><code highlight="@Input() columnControl: boolean" language="typescript"></code></td>
           <td>This is an optional input which will allow the user to reorder and also show/hide optional
             columns if enabled. By default it's false which means these column options are disabled to end users.
           </td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Input() entity: any"></code></td>
+          <td><code highlight="@Input() entity: any" language="typescript"></code></td>
           <td>This is an optional input (object) which can be used to send additional data to the POST endpoint.
             Everytime this object is changed a new request will be sent automatically which also makes it ideal to
             programmatically re-initialise the grid by just assigning an empty object if necessary.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Input() resetFilters: any"></code></td>
+          <td><code highlight="@Input() resetFilters: any" language="typescript"></code></td>
           <td>This is an optional input (object) which can be used to re-initialise the grid by resetting all the
             added filters. Everytime this object is changed a new request will be sent automatically by resetting all
             the filters if server-side pagination is used (not in a client side paginated grid). </td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Input() serverSidePagination: boolean"></code></td>
+          <td><code highlight="@Input() serverSidePagination: boolean" language="typescript"></code></td>
           <td>By default the grid system is client side paginated. However if your backend supports server-side
               pagination in accordance with this document, set this value to true.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Input() disableFullScreenToggle: boolean"></code></td>
+          <td><code highlight="@Input() disableFullScreenToggle: boolean" language="typescript"></code></td>
           <td>By default the grid can be toggled to fullscreen. This button can be removed if nessasary by setting this
             value to true.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Input() transparency: boolean"></code></td>
+          <td><code highlight="@Input() transparency: boolean" language="typescript"></code></td>
           <td>This is an optional input which will give the grid an aesthetic upgrade for unique UI preferences but
             does not offer any additional functionality. (It makes the data grid slightly transparent.)
           </td>
         </tr>
         <tr class="">
-          <td><code highlight="@Input() elevation: 0 | 1 | 2 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24"></code></td>
+          <td><code highlight="@Input() elevation: 0 | 1 | 2 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24" language="typescript"></code></td>
           <td>This is an optional input which will give the grid an elevation level shown by the intensity of the
             shadow underneath from 0 to 24.
           </td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Input() pageSizes: number[]"></code></td>
+          <td><code highlight="@Input() pageSizes: number[]" language="typescript"></code></td>
           <td>This is an optional input which can be used to change the default pages sizes the user will be able to pick from the bottom of the grid. Eg: [100, 200, 300]</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Input() pageSize: number"></code></td>
+          <td><code highlight="@Input() pageSize: number" language="typescript"></code></td>
           <td>This is an optional input which can be used to select the default page size. This value must be contained in the pageSizes array.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Output() requestBodyEmit: EventEmitter<GridRequest>"></code></td>
+          <td><code highlight="@Output() requestBodyEmit: EventEmitter<GridRequest>" language="typescript"></code></td>
           <td>The requestBodyEmit returns the request body when the POST request is sent to the backend. It contains the
             <b>GridRequestInterface</b>.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Output() responseEmit: EventEmitter<GridResponse>"></code></td>
+          <td><code highlight="@Output() responseEmit: EventEmitter<GridResponse>" language="typescript"></code></td>
           <td>The responseEmit returns the data when it is received from the backend. It contains the
             records, total number of pages and also an other object (which can be used to send additional
             data.)</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Output() selectionEmit: EventEmitter<any[]>"></code></td>
+          <td><code highlight="@Output() selectionEmit: EventEmitter<any[]>" language="typescript"></code></td>
           <td>The selectionEmit outputs the selected records to the parent component. This is only useful if the
             selection input given is true.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Output() filtersChangedEmit: EventEmitter<GridFilterItem[]>"></code></td>
+          <td><code highlight="@Output() filtersChangedEmit: EventEmitter<GridFilterItem[]>" language="typescript"></code></td>
           <td>This returns the filter objects created by the grid system when the user adds filters.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Output() sortChangedEmit: EventEmitter<GridSortItem>"></code></td>
+          <td><code highlight="@Output() sortChangedEmit: EventEmitter<GridSortItem>" language="typescript"></code></td>
           <td>This returns the sort object created by the grid system when the user sorts.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Output() buttonClickEmit: EventEmitter<GridButtonClick>"></code></td>
+          <td><code highlight="@Output() buttonClickEmit: EventEmitter<GridButtonClick>" language="typescript"></code></td>
           <td>This returns the button click along with the record which the click occurred so that
             any operations can be performed on the parent component.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Output() columnPreferencesChangedEmit: EventEmitter<GridHeadingInterface[]>"></code></td>
+          <td><code highlight="@Output() columnPreferencesChangedEmit: EventEmitter<GridHeadingInterface[]>" language="typescript"></code></td>
           <td>This output will only occur if the columnControl is set to true.
             This returns the updated headings array every single time when the user reorders columns or toggles
             column visibility.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Output() columnPreferencesChangeEndedEmit: EventEmitter<GridHeadingInterface[]>"></code></td>
+          <td><code highlight="@Output() columnPreferencesChangeEndedEmit: EventEmitter<GridHeadingInterface[]>" language="typescript"></code></td>
           <td>This output will only occur if the columnControl is set to true.
             This returns the updated headings array when the user reorders columns or toggles column visibility and finally
             closes the column preference menu by clicking elsewhere. This is ideal to capture and save the user's column
             preference for a return visit with a backend integration.</td>
         </tr>
         <tr class="odd">
-          <td><code highlight="@Output() columnPreferencesResetEmit: EventEmitter"></code></td>
+          <td><code highlight="@Output() columnPreferencesResetEmit: EventEmitter" language="typescript"></code></td>
           <td>This output will occur when columnControl is set to true and the user clicks on the reset button
             in the columnControl section.</td>
         </tr>
         <tr class="">
-          <td><code highlight="@Output() dataErrorEmit: EventEmitter"></code></td>
+          <td><code highlight="@Output() dataErrorEmit: EventEmitter" language="typescript"></code></td>
           <td>This output will occur if there is an error in the grid data API call.</td>
         </tr>
       </table>
