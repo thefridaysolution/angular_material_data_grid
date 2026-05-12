@@ -1,6 +1,6 @@
 <div class="position-relative">
-  <amdg-grid
-      *ngIf="showGrid"
+  @if (showGrid) {
+    <amdg-grid
       [headings]="headings"
       [url]="url"
       [selection]="true"
@@ -13,7 +13,8 @@
       (buttonClickEmit)="buttonClick($event)"
       (columnPreferencesChangedEmit)="headingsConfigChanged($event)"
       (columnPreferencesResetEmit)="resetColumnPreferencesClick()">
-  </amdg-grid>
+    </amdg-grid>
+  }
 
   <div class="scroll-down-animation-button" mat-ripple (click)="scrollBottom()">
     Code

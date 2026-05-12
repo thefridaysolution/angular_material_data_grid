@@ -11,8 +11,12 @@
 
     <div class="d-inline-flex">
       <mat-slide-toggle [(ngModel)]="darkMode" (ngModelChange)="themeChanged()" labelPosition="before" class="mr-3">
-        <span *ngIf="!darkMode"><mat-icon class="position-relative mr-2" style="top:7px">wb_sunny</mat-icon>Light</span>
-        <span *ngIf="darkMode"><mat-icon class="position-relative mr-2" style="top:7px">nights_stay</mat-icon>Dark</span>
+        @if (!darkMode) {
+          <span><mat-icon class="position-relative mr-2" style="top:7px">wb_sunny</mat-icon>Light</span>
+        }
+        @if (darkMode) {
+          <span><mat-icon class="position-relative mr-2" style="top:7px">nights_stay</mat-icon>Dark</span>
+        }
       </mat-slide-toggle>
     </div>
 
@@ -21,20 +25,24 @@
 <mat-drawer-container autosize style="min-height: 100vh">
   <mat-drawer #drawer class="sidenav" [mode]="mobileQuery.matches ? 'over' : 'side'" opened>
     <mat-accordion>
-      <mat-expansion-panel [expanded]="panel.openWhen.includes(currentNav)" *ngFor="let panel of sidePanelNavigation">
-        <mat-expansion-panel-header class="custom-side-nav-header">
-          <mat-panel-title>
-            {{panel.panelHeading}}
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div *ngFor="let item of panel.children"
-             mat-ripple
-             class="sidenav-option"
-             [ngClass]="{'selected' : item.highLightWhen.includes(currentNav)}"
-             (click)="goToRoute(item)">
-          {{item.headingName}}
-        </div>
-      </mat-expansion-panel>
+      @for (panel of sidePanelNavigation; track panel) {
+        <mat-expansion-panel [expanded]="panel.openWhen.includes(currentNav)">
+          <mat-expansion-panel-header class="custom-side-nav-header">
+            <mat-panel-title>
+              {{panel.panelHeading}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          @for (item of panel.children; track item) {
+            <div
+              mat-ripple
+              class="sidenav-option"
+              [ngClass]="{'selected' : item.highLightWhen.includes(currentNav)}"
+              (click)="goToRoute(item)">
+              {{item.headingName}}
+            </div>
+          }
+        </mat-expansion-panel>
+      }
     </mat-accordion>
   </mat-drawer>
   <div [ngStyle]="{'margin': mobileQuery.matches ? '1rem': '1.5rem'}">

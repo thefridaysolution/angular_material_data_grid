@@ -14,7 +14,7 @@
     <a id="buy-me-a-coffee" href="https://www.buymeacoffee.com/dilshanl" target="_blank">
       <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 42px;width: 150px;" >
     </a>
-    <div class="buy-me-a-coffee-container"> 
+    <div class="buy-me-a-coffee-container">
       <a href="https://www.buymeacoffee.com/dilshanl" target="_blank">
         <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 42px;width: 150px;" >
       </a>
@@ -23,9 +23,15 @@
 </div>
 
 <div class="text-center position-relative" style="padding-top: 130px">
-  <img *ngIf="!playVideo" src="./assets/youtube.png" alt="" class="youtube" (click)="playVideo = true" matTooltip="Watch Introduction Video" matTooltipPosition="above">
-  <img *ngIf="!playVideo" src="./assets/grid_background.png" alt="" style="width: 80%">
-  <iframe *ngIf="playVideo" width="560" height="315" src="https://www.youtube.com/embed/2iOzH17yl6Q?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  @if (!playVideo) {
+    <img src="./assets/youtube.png" alt="" class="youtube" (click)="playVideo = true" matTooltip="Watch Introduction Video" matTooltipPosition="above">
+  }
+  @if (!playVideo) {
+    <img src="./assets/grid_background.png" alt="" style="width: 80%">
+  }
+  @if (playVideo) {
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iOzH17yl6Q?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  }
 </div>
 
 
@@ -34,7 +40,7 @@
   <div>
     <h1>Built-in Virtual Scrolling</h1>
     <p>Scroll through large numbers of rows smoothly without having a hit on the page performance.
-      You don't have to configure anything extra.</p>
+    You don't have to configure anything extra.</p>
   </div>
 </div>
 
@@ -44,7 +50,7 @@
     <h1>Advanced Multi-Filter Features</h1>
     <p>This grid system ships with advanced string filters, numeric filters, date range filters, multi-selection
       filters and tag filters which are extremely easy to configure. The documentation is also very detailed
-      and helpful. </p>
+    and helpful. </p>
   </div>
   <img src="./assets/filters.png" alt="">
 </div>
@@ -55,7 +61,7 @@
   <div>
     <h1>Customizable Theming</h1>
     <p>The data grid is a first class material design oriented component, therefore it ships with a light and
-      dark theme which can be customized further to fit your company's branding and colors.</p>
+    dark theme which can be customized further to fit your company's branding and colors.</p>
   </div>
 </div>
 
@@ -65,7 +71,7 @@
     <h1>Optional Columns with Re-ordering</h1>
     <p>When data grids have a large number of columns, some can be made optional so the users would not get
       overwhelmed. These can be shown if the user wishes and the user can also customize the view by
-      re-ordering the columns.</p>
+    re-ordering the columns.</p>
   </div>
   <img src="./assets/column_reordering.png" alt="">
 </div>
@@ -77,7 +83,7 @@
     <p>The grid is capable of making each row expandable to show more details about a particular
       record. The developer has the ability to make the expanded row contain a custom HTML
       template with the option of adding row variables (using syntax similar to Angular's String interpolation)
-      or open a child grid with most of the capabilities of the original grid.</p>
+    or open a child grid with most of the capabilities of the original grid.</p>
   </div>
 </div>
 
@@ -101,7 +107,7 @@
     </mat-expansion-panel>
     <mat-expansion-panel>
       <mat-expansion-panel-header class="faq-header">
-          <b>Q</b>: If I use this, is there vendor lock-in? 🤔
+        <b>Q</b>: If I use this, is there vendor lock-in? 🤔
       </mat-expansion-panel-header>
       <mat-divider></mat-divider>
       <div class="mt-3 mb-3 text-justify">
@@ -131,7 +137,7 @@
 
 <div class="text-center p-3" style="background: #ececec">
   <p>Made in <span style="font-size: 30px; position: relative;top: 6px;" title="Sri Lanka">🇱🇰</span> with <span style="font-size: 20px; position: relative;top: 2px;" title="Love">❤️</span> |
-    Visit <a href="https://www.srilanka.travel/">Sri Lanka</a>
-  </p>
-  Designed & Developed by <a href="https://dilshan.pro">dilshan.pro</a> ©2022.
+  Visit <a href="https://www.srilanka.travel/">Sri Lanka</a>
+</p>
+Designed & Developed by <a href="https://dilshan.pro">dilshan.pro</a> ©2022.
 </div>
