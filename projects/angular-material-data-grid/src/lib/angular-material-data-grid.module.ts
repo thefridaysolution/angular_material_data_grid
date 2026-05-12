@@ -15,7 +15,7 @@ import { StringFilterComponent } from './components/string-filter/string-filter.
 import { MultiSelectComponent } from './components/multi-select/multi-select.component';
 import { NumberFilterComponent } from './components/number-filter/number-filter.component';
 import { DateFilterComponent } from './components/date-filter/date-filter.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -37,8 +37,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-@NgModule({
-    declarations: [
+@NgModule({ declarations: [
         PaginationComponent,
         ConfirmationComponent,
         ColumnFilterPipe,
@@ -56,9 +55,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         TemplateObjectPipe,
         ChildGridComponent
     ],
-    imports: [
-        CommonModule,
-        HttpClientModule,
+    exports: [ServerBindGridComponent], imports: [CommonModule,
         ScrollingModule,
         FormsModule,
         ReactiveFormsModule,
@@ -79,8 +76,5 @@ import { MatFormFieldModule } from '@angular/material/form-field';
         MatChipsModule,
         MatFormFieldModule,
         MatInputModule,
-        RouterModule
-    ],
-    exports: [ServerBindGridComponent]
-})
+        RouterModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AngularMaterialDataGridModule { }
